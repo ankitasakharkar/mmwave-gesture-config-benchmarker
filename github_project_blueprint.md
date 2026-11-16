@@ -78,9 +78,3 @@ mmwave-gesture-config-benchmarker/
 * **The Optimal Fix:** Keeping idle time at 10 µs while tightening the frame period to 25.0 ms (40 fps) preserves the crisp 23.0 ms integration window, eliminates high-velocity smearing, and achieves a 92% duty cycle with minimal dead time.
 
 ---
-
-## 💼 Resume Bullet Points (Copy & Adapt)
-
-* **Developed an empirical radar signal processing framework in Python/NumPy** to benchmark TI mmWave AWR1843 chirp configurations, analyzing raw LVDS binary streams (DCA1000) for gesture recognition.
-* **Identified and resolved a critical 10–15 dB Doppler smearing bottleneck** in high-velocity transient micro-gestures (finger clicks) caused by active integration window over-extension ($46\text{ ms}$ vs $23\text{ ms}$).
-* **Designed an optimized 40 fps TDM-MIMO configuration** achieving a 92% duty cycle and 20 Hz envelope Nyquist limit, eliminating inter-frame blind spots without compromising velocity resolution or transient fidelity.
